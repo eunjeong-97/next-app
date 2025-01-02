@@ -1,11 +1,12 @@
-import Image from "next/image";
-import styles from "./page.module.css";
 import Link from "next/link";
+import Image from "next/image";
+
+import styles from "./page.module.css";
 import zlogo from "@/../public/zlogo.png";
 
 export default function Home() {
   return (
-    <div>
+    <>
       <div className={styles.left}>
         <Image src={zlogo} alt="logo" />
       </div>
@@ -20,7 +21,7 @@ export default function Home() {
           로그인
         </Link>
       </div>
-    </div>
+    </>
   );
 }
 
