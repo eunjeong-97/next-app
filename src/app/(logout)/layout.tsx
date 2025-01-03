@@ -1,4 +1,4 @@
-import styles from "@/app/page.module.css";
+import styles from "@/app/layout.module.css";
 
 type Props = {
   children: React.ReactNode;
@@ -7,12 +7,9 @@ type Props = {
 
 export default function LogoutLayout({ children, modal }: Props) {
   return (
-    <>
-      LogoutLayout
-      <div className={styles.container}>
-        {children}
-        {modal}
-      </div>
-    </>
+    <div className={styles.container}>
+      {children}
+      {modal}
+    </div>
   );
 }
