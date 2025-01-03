@@ -1,5 +1,5 @@
 import SignupModalComponent from "@/app/(logout)/_component/SignupModal";
 
-export default function SignupModalPage() {
+export default function IntercepteLoginModalPage() {
   return <SignupModalComponent />;
 }
